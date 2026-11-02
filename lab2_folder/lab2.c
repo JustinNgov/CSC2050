@@ -7,7 +7,7 @@ typedef unsigned short WORD;
 typedef unsigned int DWORD;
 typedef unsigned int LONG;
 
-struct tagBITMAPFILEHEADER //16 bytes with padding
+struct tagBITMAPFILEHEADER
 {
 WORD bfType; //specifies the file type
 DWORD bfSize; //specifies the size in bytes of the bitmap file
@@ -16,7 +16,7 @@ WORD bfReserved2; //reserved; must be 0
 DWORD bfOffBits; //species the offset in bytes from the bitmapfileheader to the bitmap bits
 };
 
-struct tagBITMAPINFOHEADER //40 bytes no padding
+struct tagBITMAPINFOHEADER
 {
 DWORD biSize; //specifies the number of bytes required by the struct
 LONG biWidth; //specifies width in pixels
